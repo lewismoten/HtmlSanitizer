@@ -611,7 +611,7 @@ namespace Ganss.XSS
         /// </summary>
         /// <param name="tag">The tag.</param>
         /// <returns><c>true</c> if the tag is allowed; otherwise, <c>false</c>.</returns>
-        private bool IsAllowedTag(IElement tag)
+        protected virtual bool IsAllowedTag(IElement tag)
         {
             return AllowedTags.Contains(tag.NodeName);
         }
